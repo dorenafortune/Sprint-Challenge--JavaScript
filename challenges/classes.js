@@ -18,26 +18,47 @@
 //         height = 5,
 //       );
 
-class CuboidMaker{
-    constructor(attributes){
-        this.length = attributes.length,
-        this.width = attributes.width,
-        this.work = attributes.work
+class CuboidMaker {
+    constructor(stats){
+        this.length = stats.length,
+        this.width = stats.width,
+        this.height = stats.height
     }
-    volume(){
+    volume() {
         return this.length * this.width * this.height;
     }
-    surfaceArea(){
+    surfaceArea() {
         return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
     }
-
 }
 
 const cuboid = new CuboidMaker({
     length: 4,
-    width: 5, 
+    width: 5,
     height: 5
-});
+  });
+
+
+// class CuboidMaker{
+//     constructor(attributes){
+//         this.length = attributes.length,
+//         this.width = attributes.width,
+//         this.work = attributes.work
+//     }
+//     volume(){
+//         return this.length * this.width * this.height;
+//     }
+//     surfaceArea(){
+//         return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+//     }
+
+// }
+
+// const cuboid = new CuboidMaker({
+//     length: 4,
+//     width: 5, 
+//     height: 5
+// });
       
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
