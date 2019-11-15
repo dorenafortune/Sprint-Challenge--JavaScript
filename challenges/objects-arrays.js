@@ -15,20 +15,59 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+
+const dino1 = new Object();
+
+dino1.name = "tyrannosaurus";
+dino1.diet = "carnivorous";
+dino1.weight = "7000kg";
+dino1.length = "12m";
+dino1.period = "Late Cretaceous";
+  function roar (){
+  return "RAWERSRARARWERSARARARRRR!"
+
+}
+
+
+console.log(dino1.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+const dino2 = new Object();
+
+dino2.name = "velociraptor";
+dino2.diet = "carnivorous";
+dino2.weight = "15kg";
+dino2.length = "1.8m";
+dino2.period = "Late Cretaceous"
+
+
+console.log(dino2.diet);
 
 // How long was a stegosaurus?
-console.log();
+
+const dino3 = new Object();
+
+dino3.name = "stegosaurus";
+dino3.diet = "herbivorous";
+dino3.weight = "2000kg";
+dino3.length = "9m";
+dino3.period = "Late Jurassic"
+
+
+console.log(dino3.length);
+
+
 
 // What time period did tyrannosaurus live in?
-console.log();
+
+
+console.log(dino1.period);
+
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+
+console.log(roar());
 
 
 // ==== Arrays ====
@@ -51,7 +90,8 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
+const universities = ['Missouri Southern State College', 'The School of the Art Institute of Chicago','Marian College','International Medical & Technological University','Sultan Salahuddin Abdul Aziz Shah Polytechnic','Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft','Salem University','Coastal Carolina University', 'Universidad Católica de Ávila','Universitat Rovira I Virgili Tarragona'];
+universities.sort();
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
